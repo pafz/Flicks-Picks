@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog de Películas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f0f0f0;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      input[type='text'] {
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+      }
+      nav {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-top: 40px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+      }
+      section {
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input[type='text'],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      /* Estilo para enlaces del índice */
+      #indice a {
+        display: block;
+        margin-bottom: 8px;
+        color: #007bff;
+        text-decoration: none;
+      }
+      #indice a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Blog de Películas</h1>
+      <input
+        type="text"
+        id="buscador"
+        placeholder="Buscar películas..."
+        onkeyup="filtrarEntradas()"
+      />
+    </header>
+
+    <nav>
+      <h2>Índice de Entradas</h2>
+      <div id="indice">
+        <a href="#entrada1">Película 1: La aventura</a>
+        <a href="#entrada2">Serie 2: El misterio</a>
+        <a href="#entrada3">Película 3: La comedia</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Entrada 1 -->
+      <section id="entrada1" class="entrada">
+        <h3>Película 1: La aventura</h3>
+        <p>
+          Una emocionante historia de aventura y amistad que te mantendrá en
+          vilo hasta el final.
+        </p>
+      </section>
+
+      <!-- Entrada 2 -->
+      <section id="entrada2" class="entrada">
+        <h3>Serie 2: El misterio</h3>
+        <p>
+          Un drama intrigante con personajes complejos y giros sorprendentes en
+          cada episodio.
+        </p>
+      </section>
+
+      <!-- Entrada 3 -->
+      <section id="entrada3" class="entrada">
+        <h3>Película 3: La comedia</h3>
+        <p>
+          Comedia ligera perfecta para disfrutar en una tarde con amigos y
+          familia.
+        </p>
+      </section>
+    </main>
+
+    <hr />
+
+    <h2>Escribe una nueva entrada</h2>
+    <form id="formEntrada"></form>
+  </body>
+</html>
